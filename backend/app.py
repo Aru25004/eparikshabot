@@ -72,7 +72,8 @@ from flask_cors import CORS
 import os
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://eparikshabot.vercel.app"])
+
 
 # 🧠 Fake database (simulating a backend data store)
 fake_db = {
